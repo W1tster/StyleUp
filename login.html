@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Stylyz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html" class="LogoTxt">Stylyz</a></div>
+        <nav>
+            <ul>
+                <li><a href="wardrobe.html">Wardrobe</a></li>
+                <li><a href="stylyz.html">Stylyz</a></li>
+                <li><a href="runway.html">Runway</a></li>
+            </ul>
+        </nav>
+        <div class="right-menu">
+            <a href="login.html" class="login-link active">Login</a>
+            <i class="fas fa-user-circle profile-icon"></i>
+        </div>
+    </header>
+    
+    <main class="auth-main">
+        <div class="auth-container" id="authContainer">
+            <!-- Login Form -->
+            <div class="auth-form" id="loginForm">
+                <h2>Login to Your Account</h2>
+                <form id="loginFormElement">
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" required>
+                    </div>
+                    <button type="submit" class="auth-button">Login</button>
+                </form>
+                <p class="auth-switch">Don't have an account? <a href="#" id="showRegister">Register</a></p>
+            </div>
+            
+            <!-- Register Form -->
+            <div class="auth-form hidden" id="registerForm">
+                <h2>Create Your Account</h2>
+                <form id="registerFormElement">
+                    <div class="form-group">
+                        <label for="registerName">Full Name</label>
+                        <input type="text" id="registerName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerEmail">Email</label>
+                        <input type="email" id="registerEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registerPassword">Password</label>
+                        <input type="password" id="registerPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" required>
+                    </div>
+                    <button type="submit" class="auth-button">Register</button>
+                </form>
+                <p class="auth-switch">Already have an account? <a href="#" id="showLogin">Login</a></p>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="LogoTxt">Stylyz</span>
+                <p>Your AI Fashion Assistant</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="wardrobe.html">Wardrobe</a></li>
+                    <li><a href="stylyz.html">Stylyz</a></li>
+                    <li><a href="runway.html">Runway</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> support@stylyz.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Stylyz. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="auth.js"></script>
+</body>
+</html>
+

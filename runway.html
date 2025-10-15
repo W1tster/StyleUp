@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Runway - Stylyz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html" class="LogoTxt">Stylyz</a></div>
+        <nav>
+            <ul>
+                <li><a href="wardrobe.html">Wardrobe</a></li>
+                <li><a href="stylyz.html">Stylyz</a></li>
+                <li><a href="runway.html" class="active">Runway</a></li>
+            </ul>
+        </nav>
+        <div class="right-menu">
+            <a href="login.html" class="login-link" id="loginBtn">Login</a>
+            <i class="fas fa-user-circle profile-icon" id="profileIcon"></i>
+            <div class="profile-dropdown" id="profileDropdown">
+                <a href="profile.html">My Profile</a>
+                <a href="#" id="logoutBtn">Logout</a>
+            </div>
+        </div>
+    </header>
+    
+    <main class="runway-main">
+        <h1>Fashion Runway</h1>
+        <p class="subtitle">Discover trending styles and personalized recommendations</p>
+        
+        <div class="runway-container">
+            <div class="runway-section">
+                <h2>Your Recommended Outfits</h2>
+                <p class="login-prompt" id="runwayLoginPrompt">Please <a href="login.html">login</a> to see your personalized recommendations</p>
+                <div class="outfit-grid" id="recommendedOutfits">
+                    <!-- Recommended outfits will be displayed here when logged in -->
+                </div>
+            </div>
+            
+            <div class="runway-section">
+                <h2>Trending Styles</h2>
+                <div class="trend-grid">
+                    <div class="trend-card">
+                        <div class="trend-image">
+                            <img src="/placeholder.svg?height=300&width=200" alt="Casual Chic">
+                        </div>
+                        <h3>Casual Chic</h3>
+                        <p>Effortless style for everyday comfort</p>
+                    </div>
+                    <div class="trend-card">
+                        <div class="trend-image">
+                            <img src="/placeholder.svg?height=300&width=200" alt="Business Casual">
+                        </div>
+                        <h3>Business Casual</h3>
+                        <p>Professional looks with a relaxed touch</p>
+                    </div>
+                    <div class="trend-card">
+                        <div class="trend-image">
+                            <img src="/placeholder.svg?height=300&width=200" alt="Evening Elegance">
+                        </div>
+                        <h3>Evening Elegance</h3>
+                        <p>Sophisticated styles for special occasions</p>
+                    </div>
+                    <div class="trend-card">
+                        <div class="trend-image">
+                            <img src="/placeholder.svg?height=300&width=200" alt="Street Style">
+                        </div>
+                        <h3>Street Style</h3>
+                        <p>Urban fashion with attitude</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="runway-section">
+                <h2>Seasonal Collections</h2>
+                <div class="season-tabs">
+                    <button class="season-tab active" data-season="spring">Spring</button>
+                    <button class="season-tab" data-season="summer">Summer</button>
+                    <button class="season-tab" data-season="fall">Fall</button>
+                    <button class="season-tab" data-season="winter">Winter</button>
+                </div>
+                <div class="season-content" id="seasonContent">
+                    <div class="season-grid" data-season="spring">
+                        <!-- Spring collection items -->
+                        <div class="season-item">
+                            <img src="/placeholder.svg?height=250&width=180" alt="Spring outfit">
+                            <h4>Floral Patterns</h4>
+                        </div>
+                        <div class="season-item">
+                            <img src="/placeholder.svg?height=250&width=180" alt="Spring outfit">
+                            <h4>Light Layers</h4>
+                        </div>
+                        <div class="season-item">
+                            <img src="/placeholder.svg?height=250&width=180" alt="Spring outfit">
+                            <h4>Pastel Colors</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="LogoTxt">Stylyz</span>
+                <p>Your AI Fashion Assistant</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="wardrobe.html">Wardrobe</a></li>
+                    <li><a href="stylyz.html">Stylyz</a></li>
+                    <li><a href="runway.html">Runway</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> support@stylyz.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Stylyz. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="runway.js"></script>
+</body>
+</html>
+
